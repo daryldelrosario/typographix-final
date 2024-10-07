@@ -19,6 +19,8 @@
 
   .image-box {
     width: 300px;
+    opacity: 0.5;
+    transform: scale(0.95);
     margin-right: 10px;
 
     &:not(.tall) {
@@ -27,6 +29,16 @@
 
     &.tall {
       height: 600px;
+      animation: levitation 4s ease-in-out infinite;
+    }
+
+    @keyframes levitation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     img {
@@ -35,6 +47,18 @@
       object-fit: cover;
       border-radius: 10px;
     }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        transition-delay: $i * 0.1s;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
   }
 
   .text-box {
@@ -42,5 +66,9 @@
     box-sizing: border-box;
     padding: 20px;
     width: 300px;
+
+    h3 {
+      color: $secondary-font-color;
+    }
   }
 }
