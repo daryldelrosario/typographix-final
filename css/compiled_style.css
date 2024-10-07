@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-#about {
+#gallery, #about {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -123,6 +123,17 @@ body {
 }
 #about .about-container .phrase.active {
   color: #c9c9c9;
+}
+
+/* GALLERY SECTION ======= */
+#gallery .gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  position: relative;
+  top: 50px;
 }
 
 /* width */
