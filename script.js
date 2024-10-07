@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // CREATE OBSERVERS for different section
-  createObserver('#about .phrase', { root: null, threshold: 1}, 'active');
+  createObserver('#about .phrase', { root: null, threshold: 1 }, 'active');
   createObserver('#gallery .image-box', { root: null, threshold: 1 }, 'active');
 })
 
