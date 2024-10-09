@@ -30,6 +30,20 @@
   margin-bottom: 15px;
 }
 
+.fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -237,6 +251,7 @@ body {
 }
 #blog .blog-container .featured-article {
   margin-bottom: 50px;
+  opacity: 0;
 }
 #blog .blog-container .featured-article h3 {
   font-size: 2.5rem;
@@ -250,6 +265,9 @@ body {
 #blog .blog-container .smaller-articles {
   display: flex;
   justify-content: space-between;
+}
+#blog .blog-container .smaller-articles .article {
+  opacity: 0;
 }
 #blog .blog-container .smaller-articles .article h3 {
   font-size: 1.8rem;
