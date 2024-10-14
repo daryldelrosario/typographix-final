@@ -170,7 +170,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-directin: row;
-  flex-direction: row;
   height: 100vh;
   position: relative;
   top: 50px;
