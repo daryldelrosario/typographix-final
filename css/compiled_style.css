@@ -169,6 +169,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-directin: row;
   flex-direction: row;
   height: 100vh;
   position: relative;
@@ -245,6 +246,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-directin: row;
   padding-top: 10vh;
 }
 #blog .blog-container {
@@ -357,6 +359,14 @@ body {
 #contact .contact-container .form-container form button:hover {
   background: rgb(56.5, 56.5, 56.5);
   color: rgb(200, 200, 200);
+}
+
+/* FOOTER SECTION ======= */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-directin: row;
 }
 
 /* TOAST SECTION ======= */

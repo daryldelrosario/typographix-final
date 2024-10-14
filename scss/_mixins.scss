@@ -41,10 +41,11 @@
 }
 
 // MIXINS FOR COMMON STYLES 
-@mixin flex-center {
+@mixin flex-center($direction: row) {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-directin: $direction;
 }
 
 @mixin blog-title($font-size) {
