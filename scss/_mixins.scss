@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-directin: $direction;
+  flex-direction: $direction;
 }
 
 @mixin blog-title($font-size) {
