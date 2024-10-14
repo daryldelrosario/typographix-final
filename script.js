@@ -39,7 +39,7 @@ function hideMenu() {
 }
 
 // FORM SUBMISSION ======================
-document.getElementById('myForm').addEventListener('submit', (e) => {
+document.getElementById('myForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
   const form = this;
