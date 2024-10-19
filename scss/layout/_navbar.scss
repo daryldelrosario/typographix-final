@@ -140,6 +140,14 @@
             border-bottom: 1px solid $nav-font-color;
             padding-bottom: 10px;
           }
+
+          @include tablet-horizontal-large {
+            font-size: 4rem;
+          }
+
+          @include tablet-horizontal {
+            font-size: 3rem;
+          }
         }
       }
     }
