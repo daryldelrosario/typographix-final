@@ -49,9 +49,17 @@
       display: flex;
       justify-content: space-between;
 
+      @include tablet-vertical {
+        flex-direction: column;
+      }
+
       .article {
         @extend %article;
         opacity: 0;
+
+        @include tablet-vertical {
+          margin-bottom: 20px;
+        }
 
         h3 {
           @include blog-title(1.8rem);

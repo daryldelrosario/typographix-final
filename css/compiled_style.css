@@ -518,8 +518,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles {
+    flex-direction: column;
+  }
+}
 #blog .blog-container .smaller-articles .article {
   opacity: 0;
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles .article {
+    margin-bottom: 20px;
+  }
 }
 #blog .blog-container .smaller-articles .article h3 {
   font-size: 1.8rem;
