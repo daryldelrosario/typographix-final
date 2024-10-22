@@ -53,6 +53,11 @@
         flex-direction: column;
       }
 
+      @include smartphone-vertical {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
       .article {
         @extend %article;
         opacity: 0;
