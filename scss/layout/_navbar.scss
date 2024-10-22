@@ -148,6 +148,10 @@
           @include tablet-horizontal {
             font-size: 3rem;
           }
+
+          @include smartphone-vertical {
+            font-size: 3rem;
+          }
         }
       }
     }
