@@ -585,6 +585,12 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+@media (max-width: 600px) {
+  #contact .contact-container .form-container form .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 #contact .contact-container .form-container form .grid-container .form-group {
   display: flex;
   flex-direction: column;

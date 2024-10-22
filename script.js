@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const isMobile = window.innerWidth <= 1025;
+
   // FUNCTION to create and observe Intersection Observers
   function createObserver(selector, observerOptions, toggleClass) {
     const items = document.querySelectorAll(selector);
@@ -18,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // CREATE OBSERVERS for different section
-  createObserver('#about .phrase', { root: null, threshold: 1 }, 'active');
-  createObserver('#gallery .image-box', { root: null, threshold: 0.3 }, 'active');
-  createObserver('#blog .featured-article, #blog .article', { root: null, threshold: 0.2 }, 'fadeInUp');
-  createObserver('#contact > div', { root: null, threshold: 0.5 }, 'fadeInUp');
+  createObserver('#about .phrase', { root: null, threshold: isMobile ? 0.5 : 1 }, 'active');
+  createObserver('#gallery .image-box', { root: null, threshold: isMobile ? 0 : 0.3 }, 'active');
+  createObserver('#blog .featured-article, #blog .article', { root: null, threshold: isMobile ? 0 : 0.2 }, 'fadeInUp');
+  createObserver('#contact > div', { root: null, threshold: isMobile ? 0 : 0.5 }, 'fadeInUp');
 })
 
 // NAVIGATION MENU ======================
