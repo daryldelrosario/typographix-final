@@ -152,6 +152,10 @@
           @include smartphone-vertical {
             font-size: 3rem;
           }
+
+          @include smartphone-small {
+            font-size: 2.5rem;
+          }
         }
       }
     }

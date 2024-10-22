@@ -245,6 +245,11 @@ body {
     font-size: 3rem;
   }
 }
+@media (orientation: portrait) and (max-height: 700px) {
+  .nav-wrapper #nav ul li a {
+    font-size: 2.5rem;
+  }
+}
 .nav-wrapper #nav.active ul {
   transform: translateY(0);
 }
@@ -288,6 +293,11 @@ body {
 @media (orientation: portrait) and (max-width: 1025px) {
   .overlay h1 {
     font-size: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 3.5rem;
   }
 }
 .overlay p {
@@ -392,6 +402,11 @@ body {
     height: auto;
     top: 100px;
     padding-bottom: 10vh;
+  }
+}
+@media (orientation: portrait) and (max-height: 700px) {
+  #gallery .gallery-container {
+    padding-bottom: 20vh;
   }
 }
 #gallery .image-box {
@@ -595,6 +610,16 @@ body {
 #contact .contact-container {
   opacity: 0;
 }
+@media (max-width: 600px) {
+  #contact .contact-container {
+    padding-top: 5vh;
+  }
+}
+@media (orientation: portrait) and (max-height: 700px) {
+  #contact .contact-container {
+    padding-top: 10vh;
+  }
+}
 #contact .contact-container h2 {
   font-size: clamp(2rem, 5vw, 3rem);
 }
@@ -640,6 +665,11 @@ body {
   margin: 20px 20px 0 0;
   height: 200px;
   resize: vertical;
+}
+@media (orientation: portrait) and (max-height: 700px) {
+  #contact .contact-container .form-container form .message textarea {
+    height: 100px;
+  }
 }
 #contact .contact-container .form-container form .message textarea:focus {
   outline: none;
