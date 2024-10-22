@@ -89,6 +89,12 @@
   }
 }
 
+@mixin smartphone-horizontal {
+  @media (orientation: landscape) and (max-height: 450px) {
+    @content;
+  }
+}
+
 // SHARED animation
 .fadeInUp {
   animation: fadeInUp 1s ease forwards;
