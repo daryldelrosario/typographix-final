@@ -602,16 +602,21 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 600px) {
-  #blog .blog-container .smaller-articles {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-}
 #blog .blog-container .smaller-articles .article {
   opacity: 0;
 }
 @media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles .article {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #blog .blog-container .smaller-articles .article {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
   #blog .blog-container .smaller-articles .article {
     margin-bottom: 20px;
   }
@@ -668,7 +673,7 @@ body {
 }
 @media (orientation: landscape) and (max-height: 450px) {
   #contact .contact-container {
-    padding-top: 10vh;
+    padding-top: 15vh;
   }
 }
 #contact .contact-container h2 {

@@ -69,16 +69,20 @@
         flex-direction: column;
       }
 
-      @include smartphone-vertical {
-        margin: 0;
-        margin-bottom: 20px;
-      }
-
       .article {
         @extend %article;
         opacity: 0;
 
         @include tablet-vertical {
+          margin-bottom: 20px;
+        }
+
+        @include smartphone-vertical {
+          margin: 0;
+          margin-bottom: 20px;
+        }
+
+        @include smartphone-horizontal {
           margin-bottom: 20px;
         }
 
