@@ -199,6 +199,11 @@ body {
   transform: translateY(-100%);
   transition: transform 0.5s ease;
 }
+@media (orientation: landscape) and (max-height: 450px) {
+  .nav-wrapper #nav ul {
+    top: 7%;
+  }
+}
 .nav-wrapper #nav ul li {
   margin: 1rem 0;
   opacity: 0;
@@ -248,6 +253,11 @@ body {
 @media (orientation: portrait) and (max-height: 700px) {
   .nav-wrapper #nav ul li a {
     font-size: 2.5rem;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
+  .nav-wrapper #nav ul li a {
+    font-size: 1.5rem;
   }
 }
 .nav-wrapper #nav.active ul {
