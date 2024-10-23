@@ -3,6 +3,11 @@
   @extend %section;
   height: 100vh;
 
+  @include smartphone-horizontal {
+    padding-top: 15vh;
+    padding-bottom: 50vh;
+  }
+
   .about-container {
     display: grid;
     place-items: center;

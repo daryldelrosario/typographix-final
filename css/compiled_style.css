@@ -201,7 +201,7 @@ body {
 }
 @media (orientation: landscape) and (max-height: 450px) {
   .nav-wrapper #nav ul {
-    top: 7%;
+    top: 5%;
   }
 }
 .nav-wrapper #nav ul li {
@@ -322,6 +322,12 @@ body {
 #about {
   height: 100vh;
 }
+@media (orientation: landscape) and (max-height: 450px) {
+  #about {
+    padding-top: 15vh;
+    padding-bottom: 50vh;
+  }
+}
 #about .about-container {
   display: grid;
   place-items: center;
@@ -419,6 +425,14 @@ body {
     padding-bottom: 20vh;
   }
 }
+@media (orientation: landscape) and (max-height: 450px) {
+  #gallery .gallery-container {
+    flex-direction: column;
+    height: auto;
+    top: 100px;
+    padding-bottom: 30vh;
+  }
+}
 #gallery .image-box {
   width: 300px;
   opacity: 0.5;
@@ -433,6 +447,11 @@ body {
   animation: levitation 4s ease-in-out infinite;
 }
 @media (orientation: portrait) and (max-width: 1025px) {
+  #gallery .image-box.tall {
+    animation: none;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
   #gallery .image-box.tall {
     animation: none;
   }
@@ -492,6 +511,16 @@ body {
 @media (orientation: portrait) and (max-width: 1025px) {
   #gallery .image-box, #gallery .text-box {
     width: 95%;
+    margin-right: unset;
+    margin: auto;
+    margin-bottom: 10px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
+  #gallery .image-box, #gallery .text-box {
+    width: 90%;
     margin-right: unset;
     margin: auto;
     margin-bottom: 10px;
@@ -630,6 +659,11 @@ body {
     padding-top: 10vh;
   }
 }
+@media (orientation: landscape) and (max-height: 450px) {
+  #contact .contact-container {
+    padding-top: 10vh;
+  }
+}
 #contact .contact-container h2 {
   font-size: clamp(2rem, 5vw, 3rem);
 }
@@ -677,6 +711,11 @@ body {
   resize: vertical;
 }
 @media (orientation: portrait) and (max-height: 700px) {
+  #contact .contact-container .form-container form .message textarea {
+    height: 100px;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
   #contact .contact-container .form-container form .message textarea {
     height: 100px;
   }
