@@ -574,6 +574,11 @@ body {
     font-size: 1.5rem;
   }
 }
+@media (orientation: landscape) and (max-height: 450px) {
+  #blog .blog-container .featured-article h3 {
+    font-size: 2rem;
+  }
+}
 #blog .blog-container .featured-article p {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -588,6 +593,11 @@ body {
   justify-content: space-between;
 }
 @media (orientation: portrait) and (max-width: 1025px) {
+  #blog .blog-container .smaller-articles {
+    flex-direction: column;
+  }
+}
+@media (orientation: landscape) and (max-height: 450px) {
   #blog .blog-container .smaller-articles {
     flex-direction: column;
   }
@@ -638,9 +648,6 @@ body {
   min-height: 300px;
 }
 
-/* MEDIA QUERIES ======================== */
-/* TABLET */
-/* SMARTPHONE VERTICAL */
 /* CONTACT SECTION ======= */
 #contact {
   display: grid;

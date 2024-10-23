@@ -37,6 +37,10 @@
         @include smartphone-vertical {
           font-size: 1.5rem;
         }
+
+        @include smartphone-horizontal {
+          font-size: 2rem;
+        }
       }
 
       p {
@@ -58,6 +62,10 @@
       justify-content: space-between;
 
       @include tablet-vertical {
+        flex-direction: column;
+      }
+
+      @include smartphone-horizontal {
         flex-direction: column;
       }
 
@@ -106,58 +114,3 @@
     }
   }
 }
-
-// .main {
-//   width: 80%;
-//   margin: 50px auto;
-// }
-
-/* MEDIA QUERIES ======================== */
-/* TABLET */
-// @media screen and (max-width: 1025px) {
-//   .main {
-//     width: 90%;
-//   }
-
-//   .featured-article h1 {
-//     font-size: 2.2rem;
-//   }
-
-//   .article {
-//     margin-bottom: 20px;
-
-//     h2 {
-//       font-size: 1.7rem;
-//     }
-//   }
-
-//   .smaller-articles {
-//     flex-direction: column;
-//   }
-// }
-
-/* SMARTPHONE VERTICAL */
-// @media screen and (max-width: 600px) {
-//   .featured-article {
-//     h1 {
-//       font-size: 1.5rem;
-//     }
-
-//     p {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   .article {
-//     margin: 10px 0;
-
-//     h2 {
-//       font-size: 1.3rem;
-//     }
-//   }
-
-//   .smaller-articles {
-//     flex-direction: column;
-//     gap: 1rem;
-//   }
-// }
